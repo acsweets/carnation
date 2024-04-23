@@ -50,27 +50,11 @@ class MainActivity : ComponentActivity() {
         startActivity(intent)
     }
 
-//    private fun userNavigateToNewScreen() {
-//        navController.navigate("details")
-//    }
+
 
     }
 
-//@Composable
-//fun NavGraph() {
-//    val navController = rememberNavController()
-//    NavHost(
-//        navController = navController,
-//        startDestination = "home"
-//    ) {
-//        composable("home") {
-//            HomeScreen(navController = navController)
-//        }
-//        composable("details") {
-//            DetailsScreen()
-//        }
-//    }
-//}
+
     @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
