@@ -46,14 +46,11 @@ class MainActivity : ComponentActivity() {
 }
 
     private fun startActivityToNewScreen() {
-        val intent = Intent(this, MainActivity2::class.java)
+        val intent = Intent(this, MainActivity3::class.java)
         startActivity(intent)
     }
 
-
-
     }
-
 
     @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
