@@ -25,18 +25,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CarnationTheme {
-
-
-
                 Column(
                     modifier = Modifier.fillMaxSize()
                 ) {
 
                     ItemExample("屏幕显示") { Item1() }
                     ItemExample("简单布局") { Item2() }
-
                     ItemExample("简单控件") { Item3() }
-
                     ItemExample("图形基础") { Item4() }
                     ItemExample("计算器") {Item5() }
 
@@ -80,9 +75,9 @@ fun Item1() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            GotoButton({}, "像素")
-            GotoButton({}, "颜色")
-            GotoButton({}, "分辨率")
+            GotoButton({}, "文本视图")
+            GotoButton({}, "文字大小")
+            GotoButton({}, "文字颜色")
 
         }
     }
@@ -96,9 +91,9 @@ fun Item2() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
+            GotoButton({}, "视图宽高")
             GotoButton({}, "空白间隔")
             GotoButton({}, "对齐方式")
-            GotoButton({}, "滚动视图")
 
         }
     }
@@ -112,8 +107,8 @@ fun Item3() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            GotoButton({}, "跑马灯")
-            GotoButton({}, "聊天室")
+            GotoButton({}, "线性布局（方向）")
+            GotoButton({}, "线性布局（权重）")
             GotoButton({}, "按钮点击")
 
         }
@@ -121,9 +116,9 @@ fun Item3() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            GotoButton({}, "图像拉伸")
-            GotoButton({}, "屏幕截图")
-            GotoButton({}, "变换图标")
+            GotoButton({}, "英文大小写")
+            GotoButton({}, "按钮点击")
+            GotoButton({}, "按钮长按")
 
         }
     }
@@ -137,9 +132,9 @@ fun Item4() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            GotoButton({}, "状态列表图形")
-            GotoButton({}, "形状定义图形")
-            GotoButton({}, "九宫格图片")
+            GotoButton({}, "图像拉伸")
+            GotoButton({}, "图像按钮")
+            GotoButton({}, "图文混排")
 
         }
     }

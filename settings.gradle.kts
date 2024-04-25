@@ -27,3 +27,4 @@ rootProject.name = "carnation"
 include(":app")
 include(":lily01")
 include(":lily")
+include(":lily02")
