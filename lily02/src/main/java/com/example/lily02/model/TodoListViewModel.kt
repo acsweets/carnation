@@ -17,6 +17,7 @@ class TodoListViewModel : ViewModel() {
         Task(id = 2, title = "做饭"),
         Task(id = 3, title = "洗衣服")
     )
+    //task为变实时数据
     private val _tasks = MutableLiveData<MutableList<Task>>().apply { value = dummyTaskModels.toMutableList() }
     val tasks: LiveData<MutableList<Task>> = _tasks
     fun updateTask(taskId: Int, isChecked: Boolean) {
