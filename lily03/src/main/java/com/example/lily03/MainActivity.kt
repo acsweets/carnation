@@ -12,13 +12,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import coil.request.ImageRequest
+import com.example.lily03.pages.AppNavHost
 import com.example.lily03.ui.theme.CarnationTheme
 
 class MainActivity : ComponentActivity() {
@@ -31,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    AppNavHost()
                 }
             }
         }
@@ -45,23 +40,15 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             text = "Hello $name!",
             modifier = modifier
         )
-        Image(
-            painter = painterResource(id = R.drawable.local_image),
-            contentDescription = "Local Image"
-        )
+//        Image(
+//            painter = painterResource(id = R.drawable.local_image),
+//            contentDescription = "Local Image"
+//        )
         AsyncImage(
             model = "https://marketplace.canva.cn/NsFNI/MADwRLNsFNI/1/screen_2x/canva-blue-textured-background-MADwRLNsFNI.jpg",
             contentDescription = "Translated description of what the image contains"
         )
 
     }
- 
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CarnationTheme {
-        Greeting("Android")
-    }
 }
